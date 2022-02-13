@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/Stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/Stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>TIP CALCULATOR</h1>
+        </header>
+        
+        <div id="calculator">
+            <form>
+                
+                <label for="billAmount">How much was your bill?<br>$
+                 <input id="billAmount"type="text"></label>
+
+                <label for="serviceQuality">How was your service?<br>
+                <select id="serviceQuality">
+                    <option disable selected value="0">-- Choose an option --</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.1">10% - It was okay</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select></label>
+
+                <label for="totalPeople">How many people are sharing the bill?<br>
+                <input type="text" id="totalPeople">people</label>
+
+                <button type="button" id="calculator">
+                    Calculate!
+                </button>
+
+                </form>
+            
+                <div id="totalTip">
+                    <sup>$</sup>
+                    <span id="tip">0.00</span>
+                    <small id="each">each</small>
+                </div>
+        </div><!-- calculator -->
+    </div> <!-- mainCoatainer-->
+
+    <script type = "text/javascript" src="script.js">
+        
+    </script>
+
+</body>
+</html>
